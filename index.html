@@ -1,85 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <title>Mi Portafolio</title>
-    <link href="styles.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <div class="header-img"></div>
-    <div class="header">Juliana Gomez</div>
-    <div class="subtitle">Front End Developer</div>
-    <div class="navigation">
-      <div class="nav-item">Acerca de</div>
-      <div class="nav-item">Mis Proyectos</div>
-      <div class="nav-item">Contacto</div>
-    </div>
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Mi Portafolio</title>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet" />
+</head>
 
-    <div class="intro">
-      Hola! Soy Juliana 👋 Soy Colombo-Canadiense, amo los gatos y tambien crear
-      cosas lindas para la web 😍 Después de estudiar comunicación social y
-      ciencia política en la universidad, trabajé varios años en mercadeo
-      digital hasta que aprendí a programar. Llevo un poco más de tres años
-      enfocándome en front end, específicamente en JavaScript y accesibilidad.
-      Sueño con una web donde todo el mundo pueda participar. Aquí puedes ver
-      algunos de mis proyectos recientes y también puedes contactarme por si
-      quieres hablar de tecnología, accesibilidad o gatos!
-      <div class="social-media">
-        <div>
-          <a href="https://twitter.com/gmzjuliana" target="_blank"
-            ><img src="images/twitter.png"
-          /></a>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+  <header>
+    <img class="header-img" src="./images/sebaspedroza.jpg" alt="Sebastian Pedroza" />
+    <h1 class="header">Sebastian Pedroza</h1>
+    <h2 class="subtitle">[Front End Developer]</h2>
+    <nav>
+      <ul class="navigation">
+        <li class="nav-item"><a href="#">Acerca de</a></li>
+        <li class="nav-item"><a href="#">Mis Proyectos</a></li>
+        <li class="nav-item"><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section>
+      <h2 class="header">Acerca de</h2>
+      <p class="intro">Hola! Soy Sebastian 👋 Soy un apasionado de la tecnología y del aprendizaje colaborativo, cuento
+        con un perfil
+        profesional completo que se encuentra avalado por mi formación como Ingeniero de Sistemas y especialmente por mi
+        rama de especialización como desarrollador Frontend.</p>
+      <ul class="social-media">
+        <li class="social-media__link">
+          <img src="images/twitter-logo.svg" alt="link a twitter" title="twitter" />
+          <a href="https://twitter.com/SebasDeveloper" target="_blank">Twitter</a>
+        </li>
+        <li class="social-media__link">
+          <img src="images/github-logo.svg" alt="link a github" title="github" />
+          <a href="https://github.com/SebasDeveloper1" target="_blank">GitHub</a>
+        </li>
+        <li class="social-media__link">
+          <img src="images/linkedin-logo.svg" alt="link a linkedin" title="linkedin" />
+          <a href="https://linkedin.com/in/sebas-developer" target="_blank">LinkedIn</a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="header">Mis proyectos</h2>
+      <div class="carousel">
+        <button class="arrow arrow-left" aria-label="backward button"></button>
+        <div class="window">
+          <ul class="project-container">
+            <li class="project1-container"><button class="project project1"><img class="project__img"
+                  src="https://i.postimg.cc/GpYC8p66/1630294094439.png" alt="Proyecto AppDopta"></button></li>
+            <li class="project2-container"><button class="project project2"><img class="project__img"
+                  src="https://i.postimg.cc/Jh2C2kZy/1.png" alt=""></button>
+            </li>
+            <li class="project3-container"><button class="project project3"><img class="project__img"
+                  src="https://i.postimg.cc/jjNd1sTj/clon-v1.png" alt="Proyecto Batatabit"></button>
+            </li>
+            <li class="project4-container" aria-hidden="true"><button class="project project4" tabindex="-1"><img
+                  class="project__img" src="https://i.postimg.cc/LsMH9HjF/dynamic-Portfolio.png"
+                  alt="Proyecto Clon Google "></button></li>
+            <li class="project5-container" aria-hidden="true"><button class="project project5" tabindex="-1"><img
+                  class="project__img"
+                  src="https://i.postimg.cc/tR1HrW9J/sebasdeveloper1-github-io-platzi-curso-Practico-Java-Script-github-io-index-html.png"
+                  alt="Proyecto Curso Platzi"></button></li>
+          </ul>
         </div>
-        <div>
-          <a href="https://github.com/gmzjuliana" target="_blank"
-            ><img src="images/github-logo.png"
-          /></a>
-        </div>
-        <div>
-          <a href="https://www.linkedin.com/in/gomezjuliana/" target="_blank"
-            ><img src="images/linkedin.png"
-          /></a>
-        </div>
+        <button class="arrow arrow-right" aria-label="forwar button"></button>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <div class="carousel">
-      <div class="arrow arrow-left"></div>
-      <div class="window">
-        <div class="project-container">
-          <div class="project project1"></div>
-          <div class="project project2"></div>
-          <div class="project project3"></div>
-          <div class="project project4"></div>
-          <div class="project project5"></div>
-        </div>
-      </div>
-      <div class="arrow arrow-right"></div>
-    </div>
+  <footer class="contact-section">
+    <h2 class="header">Contacto</h2>
+    <p class="intro">Para manderme un mensaje puedes usar el formulario que sigue</p>
+    <form class="form-container">
+      <label class="form-label">Nombre</label><input type="text" aria-label="nombre" id="name" />
+      <span id="name-error" aria-live="assertive"></span>
+      <br />
+      <label class="form-label">Correo</label><input type="text" aria-label="correo" /> <br />
+      <label class="message-input">Mensaje<input type="text" /> <br /></label>
+      <button class="send-button">Enviar</button>
+    </form>
+  </footer>
 
-    <div class="contact-section">
-      <div class="header">Contacto</div>
-      <div class="form-container">
-        Nombre<input type="text" /> <br />
-        Correo<input type="text" /> <br />
-        <div class="message-input">Mensaje<input type="text" /> <br /></div>
-        <div class="send-button">Enviar</div>
-      </div>
+  <div class="notification" aria-live="assertive"></div>
+  <div class="modal-container">
+    <div class="modal">
+      <h2 class="header" id="modal-header" tabindex="0">Ejemplo de un proyecto mio</h2>
+      <img src="images/project1.png" class="modal-project-image" alt="un pantallazo de mi project" />
+      <button class="modal-button">Cerrar</button>
     </div>
-    <div class="notification">El formulario fue enviado sin errores</div>
-    <div class="modal-container">
-      <div class="modal">
-        Ejemplo de un proyecto mio
-        <div class="modal-project-image"></div>
-      </div>
-    </div>
+  </div>
 
-    <script src="index.js" type="text/javascript"></script>
-  </body>
+  <script src="index.js" type="text/javascript"></script>
+</body>
+
 </html>
